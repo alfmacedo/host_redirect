@@ -13,9 +13,11 @@ gem 'host_redirect', git: 'https://github.com/alfml/host_redirect.git'
 In production.rb or development.rb
 ```ruby
 config.middleware.use HostRedirect::Run, {
-      # IMPORTANT: Include http: o https:
-      host_authorized: 'https://ruc.com.pe'
-}
+      # For 'host_authorizeds' send a Array
+      # For 'host_redirect' include 'http' o 'https'
+      host_authorizeds: ['ruc.com.pe', 'cloud.digitalocean.com', 'app.herokuapp.com'],
+      host_redirect: 'https://ruc.com.pe'
+  }
 ```
 
 ## Contributing
