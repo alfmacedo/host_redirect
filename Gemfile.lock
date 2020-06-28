@@ -1,0 +1,22 @@
+PATH
+  remote: .
+  specs:
+    host_redirect (0.1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    minitest (5.14.1)
+    rake (12.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundler (~> 1.17)
+  host_redirect!
+  minitest (~> 5.0)
+  rake (~> 12.3.3)
+
+BUNDLED WITH
+   1.17.3
